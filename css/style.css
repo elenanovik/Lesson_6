@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap&subset=cyrillic-ext");
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url("../fonts/GothamPro-Bold.woff2") format('woff2'),
+        url("../fonts/GothamPro-Bold.woff") format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url("../fonts/GothamPro-Italic.woff2") format('woff2'),
+        url("../fonts/GothamPro-Italic.woff") format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url("../fonts/GothamPro.woff2") format('woff2'),
+        url("../fonts/GothamPro.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+* {
+    color: #000;
+}
+li {
+    list-style: none;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+img {
+    vertical-align: top;
+} 
+/* -------------------- */
+html, 
+body {
+    height: 100%;
+}
+html {
+  font-size: 16px;  
+}
+body {
+    font-family: "Gotham Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+.wrapper {
+    min-height: 100%;
+    padding: 40px;
+}
+
+/* HEADER */
+h1, h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    text-align: center; 
+    text-transform: uppercase;
+    margin: 0 0 40px 0;
+}
+h1 {
+    font-size: 36px;
+    line-height: 36px;
+    color: #0f31f0;
+    text-shadow: 2px 2px 2px #22327f;
+}
+h2 {
+    font-size: 32px;
+    line-height: 32px;
+    color: #657bfc;
+}
+h3 {
+    font-size: 28px;
+    color: #293986;
+    font-style: italic;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+h4 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    margin:  0 0 30px 0;
+}
+.header img {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 1400px;
+    height: auto;
+    display: block;
+    padding: 20px;
+    background-color: #f3d112;
+}
+.header a {
+    color: #610ceb;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    display: inline-block;
+}
+ul.list {
+    margin-bottom: 20px;
+}
+/* -------------------- */
+
+/* MAIN */
+.text {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-top: 35px;
+    border-top: 2px solid #ccc;
+    color: #544077;
+    opacity: 0.6;
+}
+.block {
+    margin: 30px auto;
+    margin-bottom: 40px;
+    max-width: 80%;
+    min-height: 200px;
+    background-color: gold;
+    font-size: 20px;
+    padding: 30px;
+    line-height: 26px;
+    border-radius: 20px;
+    border: 7px solid #cddc39;
+}
+.image {
+    width: 991px;
+    height: auto;
+    display: block;
+    margin: 0 auto 40px;
+    border: 20px solid #0f10f1;
+}
+.differ {
+    font-size: 32px;
+    color: #4e08cf;
+    font-style: italic;
+    font-weight: 600;
+} 
+.large {
+    font-size: 24px;
+    margin: 0 0 40px 0;
+    color: #00bcd4;
+    font-weight: 500;
+    text-align: center;
+}
+.large span {
+    color: #4caf50;
+    font-weight: 600;
+}
+.colums {
+    margin-bottom: 50px;
+}
+.colum {
+    width: 32.4%;
+    display: inline-block;
+    background-color: rgb(249, 209, 90);
+    margin-right: 10px;
+    padding: 30px;
+    vertical-align: top;
+    overflow: auto;
+    max-height: 550px;
+}
+.colum h2 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+.colum p {
+    font-size: 20px;
+}
+.nature {
+    display: block;
+    min-width: 100%;
+    height: auto;
+    margin: 0 0 40px 0;
+    border: 5px dashed #2af749;
+}
+.indicate {
+    max-width: 1000px;
+    background-color: #2d9246;
+    margin: 0 auto 40px;
+    padding: 30px 30px 30px 50px;
+    border-radius: 80px 0;
+    box-shadow: inset 7px 6px 6px 3px #cddc39, 7px 6px 6px 3px #cddc39;
+}
+.indicate h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0 0 10px 0;
+    color: #e9ea7f;
+}
+.indicate p {
+    color: #fff;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.indicate > ul > li {
+    list-style-type: square;
+    color: #dad5d5;
+    font-size: 20px;
+}
+.up {
+    display: inline-block;
+    background-color: #78cff1;
+    padding: 10px;
+}
+.set {
+    width: 198px;
+    height: 200px;
+    background-color: #ffc107;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 0 40px 50px;
+    padding: 10px;
+    overflow: hidden;
+}
+.word > p {
+    opacity: 0.5;
+    margin: 0 0 40px 0;
+    color: #046f02;
+    font-size: 18px;
+}
+.span {
+    display: inline-block;
+    border: 2px solid #0f10f1;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    color: #07518c;
+    font-size: 18px;
+    font-style: italic;
+}
+.square {
+    width: 500px;
+    height: 500px;
+    background-color: #efd3df;
+    margin-bottom: 40px;
+    border-left: 8px dotted #000;
+    border-top: 8px dashed #000;
+    border-right: 8px solid #000;
+    border-bottom: 8px double #000;
+}
+.ref {
+    display: inline-block;
+    background-color: #ff9800;
+    padding: 20px;
+    box-shadow: 7px 6px 11px 5px #ffc107;
+    font-weight: 600;
+    border-radius: 10px;
+    margin: 0 0 40px 0;
+}
+/* -------------------- */
+
+/* FOOTER */
+.footer {
+    color: #000;
+    text-align: center;
+    line-height: 200%;
+    font-size: 14px;
+    padding-top: 20px;
+    border-top: 2px solid #ccc;
+}
+/* -------------------- */
